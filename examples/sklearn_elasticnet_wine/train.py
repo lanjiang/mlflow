@@ -45,7 +45,7 @@ if __name__ == "__main__":
     l1_ratio = float(sys.argv[2]) if len(sys.argv) > 2 else 0.5
     
     mlflow.set_tracking_uri('databricks')
-    mlflow.set_experiment('experiments/wine')
+    mlflow.set_experiment('/Users/lan.jiang@databricks.com/experiments/wine')
     
     with mlflow.start_run():
         lr = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, random_state=42)
